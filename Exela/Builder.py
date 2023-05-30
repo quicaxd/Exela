@@ -28,6 +28,16 @@ def build():
         command = "pyinstaller --onefile --noconsole --clean stub.py"
     subprocess.run(command, shell=True)
     subprocess.run("start dist", shell=True)
+    
+def installer():
+    subprocess.Popen("pip install requests")
+    subprocess.Popen("pip install base64")
+    subprocess.Popen("pip install pypiwin32")
+    subprocess.Popen("pip install pycryptodo")
+    subprocess.Popen("pip install pycryptodome")
+    subprocess.Popen("pip install wmi")
+    subprocess.Popen("pip install pyinstaller")
+
 def removee():
     try:
         shutil.rmtree("dist")
@@ -38,5 +48,6 @@ def removee():
 
 if __name__ == '__main__':
     removee()
+    installer()
     build()
     
