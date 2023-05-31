@@ -19,7 +19,7 @@
 
 - Discord Token Stealer
 
-- All private Discord info's ("Username, Phone Numbers, Email Adress, Bililng information, Nitro status")
+- All private Discord info's ("Username, Phone Numbers, Email Adress, Billing information, Nitro status, Discord Account Biograph, Discord Account PP")
 
 - Screesnhot from Client
 
