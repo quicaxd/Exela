@@ -35,7 +35,7 @@
 
 - Download the latest version of python from https://www.python.org/
 
-- Open the Exela folder on cmd and write python Builder.py and wait for the compiling
+- Open the Exela folder on cmd and write python Builder.py and answer the questions, finally wait for the compiling
 
 # Warning
 
