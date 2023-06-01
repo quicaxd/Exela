@@ -63,6 +63,10 @@
 
 - I am not responsible for any illegal use
 
+- do not try to compile and execute on non windows operating system
+
+- just compile and execute on windows operating system
+
 ## Screenshot's
 
 ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/d7ptzz0.png)
