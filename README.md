@@ -23,7 +23,27 @@
 
 - Screesnhot from Client
 
-- All System information's
+- All System informations
+
+# Supported Browsers
+
+- Google Chrome
+
+- Opera
+
+- Opera GX
+
+- Brave
+
+- Microsoft Edge
+
+- All Browsers versions Supported
+
+# Browsers to be added
+
+- FTP (Firefox)
+
+- Yandex
 
 # Additional
 
