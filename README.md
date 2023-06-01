@@ -69,6 +69,6 @@
 
 ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/pthh62a.png)
   
-![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/9mbsuw3.png)
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/974uzta.png)
 
 ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/1n94gc6.png)
