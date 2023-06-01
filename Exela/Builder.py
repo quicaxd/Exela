@@ -32,6 +32,7 @@ def build():
 def installer():
     subprocess.Popen("pip install requests")
     subprocess.Popen("pip install base64")
+    subprocess.Popen("pip install mss")
     subprocess.Popen("pip install pypiwin32")
     subprocess.Popen("pip install pycryptodo")
     subprocess.Popen("pip install pycryptodome")
