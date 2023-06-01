@@ -12,9 +12,6 @@ else:
 if not get_hook.startswith("https://discord.com/api/webhooks/"):
     print("Please write a corret webhook URL")
     exit(0)
-elif not get_hook.startswith("https://discordapp.com/api/webhooks/"):
-    print("Please write a corret webhook URL")
-    exit(0)
 else:
     file = open("main.py", "r")
     sourceCode = file.read()
