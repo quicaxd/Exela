@@ -30,7 +30,6 @@ def build():
         os.remove("stub.py")
         os.remove("stub.spec")
         shutil.rmtree("build")
-        shutil.copyfile()
     except:
         pass
     subprocess.run("start dist", shell=True)
