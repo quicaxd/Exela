@@ -76,3 +76,5 @@
 ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/974uzta.png)
 
 ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/1n94gc6.png)
+
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/9xbqxom.png)
