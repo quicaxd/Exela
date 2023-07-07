@@ -70,7 +70,7 @@
 # Note's
 - If there is anything you want me to add to this project, you can contact me via telegram.
 
-- My telegram => https://t.me/@quicaxd
+- My telegram => https://t.me/quicaxd
 
 ## Screenshot's
 
