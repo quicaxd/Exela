@@ -68,9 +68,11 @@
 - just compile and execute on windows operating system
 
 # Note's
-- If there is anything you want me to add to this project, you can contact me via telegram.
+- If there is anything you want me to add to this project, you can contact me via telegram or Discord.
 
 - My telegram => https://t.me/quicaxd
+
+- My discord => quicaxd#6889
 
 ## Screenshot's
 
