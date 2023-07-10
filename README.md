@@ -21,6 +21,8 @@
 
 - All private Discord info's ("Username, Phone Numbers, Email Adress, Payment information, Nitro status, Discord Account Biography, Discord Account PP, Discord Account ID, Discord Account MFA status")
 
+- Wifi Grabber
+
 - Screesnhot from Client
 
 - All System informations
