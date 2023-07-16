@@ -15,7 +15,7 @@
 
 - Download's Grabber
 
-- Automatic Startup ("Task Scheduler injection, Regex Injection")
+- Automatic Startup ("Task Scheduler injection, Registry Injection")
 
 - Discord Token Stealer
 
